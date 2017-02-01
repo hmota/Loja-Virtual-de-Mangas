@@ -8,9 +8,9 @@ namespace LojaVirtual.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "Bem vindo a nossa Loja de mangás";
+            return View();
         }
     }
 }

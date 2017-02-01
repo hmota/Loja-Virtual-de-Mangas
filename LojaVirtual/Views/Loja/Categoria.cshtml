@@ -1,0 +1,17 @@
+﻿@model LojaVirtual.Models.Genero
+
+@{
+    ViewBag.Title = "Categoria";
+}
+
+<h2>Navegando por: @Model.Nome</h2>
+
+<ul>
+    @foreach (var manga in Model.Mangas)
+    {
+        <li>
+            @Html.ActionLink(manga.Titulo, "Detalhes", new { id = manga.MangaId })
+        </li>
+    }
+</ul>
+

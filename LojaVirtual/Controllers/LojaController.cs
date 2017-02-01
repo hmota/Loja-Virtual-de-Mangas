@@ -3,28 +3,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using LojaVirtual.Models;
 
 namespace LojaVirtual.Controllers
 {
     public class LojaController : Controller
     {
+        LojaVirtualEntities lojaDB = new LojaVirtualEntities();
+
         // GET: Loja/
-        public string Index()
+        public ActionResult Index()
         {
-            return "Bem vindo ao indice";
+            var generos = lojaDB.Generos.ToList();
+
+            return View(generos);
         }
 
         // GET: Loja/Categoria?Genero=SciFi
-        public string Categoria(string genero)
+        public ActionResult Categoria(string genero)
         {
-            var mensagem = HttpUtility.HtmlEncode("Categoria: " + genero);
-            return mensagem;
+            var generoModel = lojaDB.Generos.Include("Mangas")
+                .Single(g => g.Nome == genero);
+
+            return View(generoModel);
         }
 
-        // GET: Loja
-        public string Detalhes()
+        // GET: Loja/
+        public ActionResult Detalhes(int id)
         {
-            return "Detalhes";
+            var dbManga = lojaDB.Mangas.Find(id);
+            return View(dbManga);
         }
     }
 }

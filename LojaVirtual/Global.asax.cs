@@ -12,6 +12,8 @@ namespace LojaVirtual
     {
         protected void Application_Start()
         {
+            System.Data.Entity.Database.SetInitializer(new LojaVirtual.Models.SampleData());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<LojaVirtual.Models.Genero>
+
+@{
+    ViewBag.Title = "Loja";
+}
+
+<h3>Categorias:</h3>
+
+<p>Selecione uma das @Model.Count() categirias: </p>
+<ul>
+    @foreach(var genero in Model)
+    {
+        <li>@Html.ActionLink(genero.Nome, "Categoria", new { genero = genero.Nome }) </li>
+    }
+</ul>
+
