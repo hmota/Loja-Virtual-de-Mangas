@@ -62,6 +62,7 @@ namespace LojaVirtual.Models
             }.ForEach(m => context.Mangas.Add(m));
 
             context.SaveChanges();
+
         }
     }
 }
