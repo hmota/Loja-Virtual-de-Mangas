@@ -130,6 +130,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GerenciaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LojaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -181,6 +182,11 @@
     <Content Include="Views\Loja\Detalhes.cshtml" />
     <Content Include="Views\Loja\Categoria.cshtml" />
     <Content Include="Views\Loja\Index.cshtml" />
+    <Content Include="Views\Gerencia\Create.cshtml" />
+    <Content Include="Views\Gerencia\Delete.cshtml" />
+    <Content Include="Views\Gerencia\Details.cshtml" />
+    <Content Include="Views\Gerencia\Edit.cshtml" />
+    <Content Include="Views\Gerencia\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

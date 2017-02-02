@@ -1,0 +1,48 @@
+﻿@model LojaVirtual.Models.Manga
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Manga</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Título
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt>
+            Capa
+        </dt>
+        <dd>
+            <img src="@Model.CapaMangaUrl" alt="Sample Image" width="200" height="300" />
+        </dd>
+        <dt>
+            Autor
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Autor.Nome)
+        </dd>
+        <dt>
+            Preço
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+        <dt>
+            Categoria
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genero.Nome)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MangaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -14,6 +14,7 @@ namespace LojaVirtual.Models
 
         public virtual DbSet<Manga> Mangas { get; set; }
         public virtual DbSet<Genero> Generos { get; set; }
+        public virtual DbSet<Autor> Autores { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

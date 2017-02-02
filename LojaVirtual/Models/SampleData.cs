@@ -60,7 +60,7 @@ namespace LojaVirtual.Models
                 new Manga { Titulo = "Hokuto no Ken", Genero = generos.Single(g => g.Nome == "Shōnen"), Preco = 2.7M, Autor = autores.Single(a => a.Nome == "Buronson"), CapaMangaUrl = "https://upload.wikimedia.org/wikipedia/en/9/92/Hokuto_no_Ken_tankobon.jpg" },
                 new Manga { Titulo = "Touch", Genero = generos.Single(g => g.Nome == "Shōnen"), Preco = 2.6M, Autor = autores.Single(a => a.Nome == "Mitsuru Adachi"), CapaMangaUrl = "https://en.wikipedia.org/wiki/Touch_(manga)#/media/File:Touch-vol14-AdachiMitsuru.jpg" }
             }.ForEach(m => context.Mangas.Add(m));
-
+            
             context.SaveChanges();
         }
     }
