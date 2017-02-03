@@ -10,6 +10,7 @@ using LojaVirtual.Models;
 
 namespace LojaVirtual.Controllers
 {
+    [Authorize(Roles ="Administrator")]
     public class GerenciaController : Controller
     {
         private LojaVirtualEntities db = new LojaVirtualEntities();
