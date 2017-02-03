@@ -1,5 +1,13 @@
 ﻿@model IEnumerable<LojaVirtual.Models.Manga>
 
+@helper Truncate(string input, int length)
+{
+if (input.Length <= length)
+{ @input }
+else
+{@input.Substring(0, length)<text>...</text>}
+}
+
 @{
     ViewBag.Title = "Index";
 }
@@ -44,7 +52,7 @@
             @Html.DisplayFor(modelItem => item.Preco)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.CapaMangaUrl)
+            @Truncate(item.CapaMangaUrl, 40)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.MangaId }) |
