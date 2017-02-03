@@ -141,6 +141,7 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\Carrinho.cs" />
     <Compile Include="Models\Genero.cs" />
     <Compile Include="Models\LojaVirtualEntities.cs" />
     <Compile Include="Models\Manga.cs" />

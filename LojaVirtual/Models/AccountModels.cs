@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Web.Mvc;
 using System.Web.Security;
 
-namespace Mvc3ToolsUpdateWeb_Default.Models
+namespace LojaVirtual.Models
 {
 
     public class ChangePasswordModel
