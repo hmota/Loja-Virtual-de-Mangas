@@ -132,6 +132,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CarrinhoController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GerenciaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -142,11 +143,17 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Autor.cs" />
     <Compile Include="Models\Carrinho.cs" />
+    <Compile Include="Models\CarrinhoCompra.cs" />
     <Compile Include="Models\Genero.cs" />
+    <Compile Include="Models\ICarrinhoCompra.cs" />
     <Compile Include="Models\LojaVirtualEntities.cs" />
     <Compile Include="Models\Manga.cs" />
+    <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\PedidoDetalhe.cs" />
     <Compile Include="Models\SampleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CarrinhoCompraViewModel.cs" />
+    <Compile Include="ViewModels\RemoveCarrinhoCompraViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -199,6 +206,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\CarrinhoCompra\" />
+    <Folder Include="Views\Carrinho\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
