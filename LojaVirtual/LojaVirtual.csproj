@@ -137,9 +137,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Autor.cs" />
+    <Compile Include="Models\Carrinho.cs" />
+    <Compile Include="Models\CarrinhoCompra.cs" />
     <Compile Include="Models\Genero.cs" />
+    <Compile Include="Models\ICarrinhoCompra.cs" />
     <Compile Include="Models\LojaVirtualEntities.cs" />
     <Compile Include="Models\Manga.cs" />
+    <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\PedidoDetalhe.cs" />
     <Compile Include="Models\SampleData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
